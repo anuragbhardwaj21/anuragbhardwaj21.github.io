@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zomato</title>
+    <style>
+      /* Write all styles here  */
+      .zomatologo {
+        color: rgb(255, 0, 0);
+      }
+      .nav {
+        box-shadow: rgba(148, 148, 148, 0.2) 0px 0px 10px;
+        height: 4em;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 1% 1%;
+      }
+      .navdiv {
+        display: flex;
+        position: relative;
+        gap: 4em;
+        color: rgb(0, 136, 255);
+      }
+      .download {
+        border: none;
+        background-color: rgb(248, 3, 3);
+        padding: 14px 21px;
+        cursor: pointer;
+        color: #ffffff;
+      }
+      .top {
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+      }
+      .mainorder {
+        display: flex;
+      }
+      .imgdiv {
+        width: 300px;
+      }
+      .imgdiv img {
+        width: 100%;
+      }
+      /*  */
+      .mid {
+        margin-left: 20em;
+        margin-right: 20em;
+      }
+      .maindiv {
+        justify-content: center;
+        display: grid;
+        text-align: center;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+      .card {
+        box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+        width: 300px;
+        height: 260px;
+        border-radius: 15px;
+      }
+      .card img {
+        width: 100%;
+      }
+      .card h3 {
+        margin-top: 1px;
+      }
+      .card p {
+        margin: -1px;
+        color: blue;
+      }
+      .bottom {
+        margin-left: 10em;
+        margin-right: 10em;
+      }
+      .howwork {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+      }
+      .workcard {
+        align-items: center;
+        text-align: center;
+      }
+      @media only screen and (max-width: 800px) {
+        /* Medium Screen  */
+        .maindiv {
+          justify-content: center;
+          display: grid;
+          text-align: center;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 20px;
+        }
+        .top {
+          justify-content: center;
+          display: flex;
+          flex-direction: column;
+          gap: 2em;
+        }
+      }
+
+      @media only screen and (max-width: 500px) {
+        /* Small Screen  */
+
+        .howwork {
+          display: flex;
+          justify-content: space-around;
+          flex-direction: column;
+        }
+        .top {
+          justify-content: center;
+          display: flex;
+          flex-direction: column;
+          gap: 2em;
+        }
+
+        .maindiv {
+          justify-content: center;
+          display: grid;
+          text-align: center;
+          grid-template-columns: repeat(1, 1fr);
+          gap: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <h1 class="zomatologo">Zomato</h1>
+      <div class="navdiv">
+        <p>MENU</p>
+        <p>STORY</p>
+        <p>GIFT CARD</p>
+        <p>CONTACT</p>
+      </div>
+      <button class="download">DOWNLOAD APP</button>
+    </div>
+    <br /><br /><br />
+
+    <h1 style="margin-left: 9em">Order</h1>
+    <div class="top">
+      <div class="mainorder">
+        <div>
+          <div class="imgdiv">
+            <img
+              src="https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around%7C402:360&crop=402:360;*,*"
+              alt=""
+            />
+          </div>
+          <h3>Order Online</h3>
+          <p>Stay home & order to your doorsteps</p>
+        </div>
+      </div>
+
+      <div class="mainorder">
+        <div>
+          <div class="imgdiv">
+            <img
+              src="https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around%7C402:360&crop=402:360;*,*"
+              alt=""
+            />
+          </div>
+          <h3>Dining</h3>
+          <p>Stay home & order to your doorsteps</p>
+        </div>
+      </div>
+
+      <div class="mainorder">
+        <div>
+          <div class="imgdiv">
+            <img
+              src="https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around%7C402:360&crop=402:360;*,*"
+              alt=""
+            />
+          </div>
+          <h3>Nightlife & Clubs</h3>
+          <p>Stay home & order to your doorsteps</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mid">
+      <h1>Our products</h1>
+      <div class="maindiv">
+        <div class="card">
+          <img
+            src="https://b.zmtcdn.com/merchant-onboarding/be4f70ca22a3b31a84b3cf8ed811f0281600769259.png"
+            alt=""
+          />
+          <h3>Listing</h3>
+          <p>Learn More</p>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://b.zmtcdn.com/merchant-onboarding/be4f70ca22a3b31a84b3cf8ed811f0281600769259.png"
+            alt=""
+          />
+          <h3>Listing</h3>
+          <p>Learn More</p>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://b.zmtcdn.com/merchant-onboarding/be4f70ca22a3b31a84b3cf8ed811f0281600769259.png"
+            alt=""
+          />
+          <h3>Listing</h3>
+          <p>Learn More</p>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://b.zmtcdn.com/merchant-onboarding/be4f70ca22a3b31a84b3cf8ed811f0281600769259.png"
+            alt=""
+          />
+          <h3>Listing</h3>
+          <p>Learn More</p>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://b.zmtcdn.com/merchant-onboarding/be4f70ca22a3b31a84b3cf8ed811f0281600769259.png"
+            alt=""
+          />
+          <h3>Listing</h3>
+          <p>Learn More</p>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://b.zmtcdn.com/merchant-onboarding/be4f70ca22a3b31a84b3cf8ed811f0281600769259.png"
+            alt=""
+          />
+          <h3>Listing</h3>
+          <p>Learn More</p>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br />
+
+    <div class="bottom">
+      <h1 style="text-align: center">How it works</h1>
+      <div class="howwork">
+        <div class="workcard">
+          <img
+            src="https://b.zmtcdn.com/merchant-onboarding/efdd6ac0cd160a46c97ad58d9bbd73fd1600699950.png"
+            alt=""
+          />
+          <h3>Step 1</h3>
+          <p>Create your page on Zomato</p>
+          <p>Help users discover your place by creating a listing on zomato</p>
+        </div>
+        <div class="workcard">
+          <img
+            src="https://b.zmtcdn.com/merchant-onboarding/efdd6ac0cd160a46c97ad58d9bbd73fd1600699950.png"
+            alt=""
+          />
+          <h3>Step 1</h3>
+          <p>Create your page on Zomato</p>
+          <p>Help users discover your place by creating a listing on zomato</p>
+        </div>
+        <div class="workcard">
+          <img
+            src="https://b.zmtcdn.com/merchant-onboarding/efdd6ac0cd160a46c97ad58d9bbd73fd1600699950.png"
+            alt=""
+          />
+          <h3>Step 1</h3>
+          <p>Create your page on Zomato</p>
+          <p>Help users discover your place by creating a listing on zomato</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
