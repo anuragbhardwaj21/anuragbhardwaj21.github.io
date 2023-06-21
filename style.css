@@ -1,0 +1,30 @@
+body{
+    font-family: 'Radio Canada', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#nav-menu{
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.786);
+    padding: .9em 0;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+#nav-menu a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.488);
+    transition: .2s ease-in-out;
+}
+#nav-menu a:hover{
+    color: rgba(255, 255, 255, 0.827);
+}
+#home,#contact,#skills{
+    height: 100vh;
+    border: .5px solid red;
+}
+#about,#projects{
+    height: 100vh;
+    border: .5px solid blueviolet;
+}
