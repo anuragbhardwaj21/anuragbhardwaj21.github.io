@@ -1,6 +1,5 @@
 import navbar from "./components.js";
 const nav = document.getElementById("nav-menu");
-console.log(nav);
 nav.innerHTML = navbar();
 
 const homeLeft = document.getElementById("home-left");
@@ -46,3 +45,6 @@ var data = [
     desc: "Convenient, reliable, and accessible online medical store delivering healthcare essentials 24/7.",
   },
 ];
+// ---------------------------------->
+
+
