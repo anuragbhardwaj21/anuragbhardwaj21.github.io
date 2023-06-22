@@ -7,4 +7,11 @@ const navbar = () => {
   <a href="#contact" class="nav-link contact">Contact</a>
   <a href="#" target="_blank" class="nav-link resume" download="Anurag_CV.pdf">Resume <ion-icon name="download-outline"></ion-icon></a>`;
 };
-export default navbar;
+const footer = () => {
+  return `<a href="">Home</a>
+    <a href="">About</a>
+    <a target="_blank" href="https://www.instagram.com/23.61.am/">Connect on Insta</a>
+    <a target="_blank" href="https://www.linkedin.com/in/anurag-bhardwaj-2361am/">Connect on LinkedIn</a>
+    <a href="#" target="_blank" class="nav-link resume" download="Anurag_CV.pdf">Resume <ion-icon name="download-outline"></ion-icon></a>`;
+};
+export {navbar,footer};

@@ -1,6 +1,8 @@
-import navbar from "./components.js";
+import { navbar, footer } from "./components.js";
 const nav = document.getElementById("nav-menu");
 nav.innerHTML = navbar();
+const foothome = document.getElementById("footer");
+foothome.innerHTML = footer();
 
 const homeLeft = document.getElementById("home-left");
 const homeRight = document.getElementById("home-right");
