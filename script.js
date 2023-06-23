@@ -40,13 +40,82 @@ var data = [
     name: "SkinStore",
     link: "https://skinstoreclone7.netlify.app/",
     desc: "One of the first online stores to offer dermatologist-created and recommended products worldwide.",
+    video: "./skinstore.mov",
   },
   {
     name: "Healthcare 24/7",
     link: "https://skinstoreclone7.netlify.app/",
     desc: "Convenient, reliable, and accessible online medical store delivering healthcare essentials 24/7.",
+    video: "./healthcare247.mov",
   },
 ];
 // ---------------------------------->
+
+
+
+function a() {
+  projectVideo1.play();
+}
+function b() {
+  projectVideo1.pause();
+  projectVideo1.currentTime = 0;
+}
+function c() {
+  if (projectDetails1.style.width == "30%") {
+    setTimeout(() => {
+      projectDetails1.style.opacity = "0";
+    }, 300);
+    setTimeout(() => {
+      projectDetails1.style.width = "0";
+    }, 500);
+    
+  } else {
+    projectDetails1.style.width = "30%";
+
+    setTimeout(() => {
+      projectDetails1.style.opacity = "1";
+    }, 500);
+  }
+}
+var projectVideo1 = document.querySelector(".project-video-1");
+projectVideo1.addEventListener("mouseover", a);
+projectVideo1.addEventListener("mouseout", b);
+
+var projectDetails1 = document.querySelector(".project-details-1");
+projectVideo1.addEventListener("click", c);
+
+
+
+
+function a2() {
+  projectVideo2.play();
+}
+function b2() {
+  projectVideo2.pause();
+  projectVideo2.currentTime = 0;
+}
+function c2() {
+  if (projectDetails2.style.width == "30%") {
+    setTimeout(() => {
+      projectDetails2.style.opacity = "0";
+    }, 300);
+    setTimeout(() => {
+      projectDetails2.style.width = "0";
+    }, 500);
+    
+  } else {
+    projectDetails2.style.width = "30%";
+
+    setTimeout(() => {
+      projectDetails2.style.opacity = "1";
+    }, 500);
+  }
+}
+var projectVideo2 = document.querySelector(".project-video-2");
+projectVideo2.addEventListener("mouseover", a2);
+projectVideo2.addEventListener("mouseout", b2);
+
+var projectDetails2 = document.querySelector(".project-details-2");
+projectVideo2.addEventListener("click", c2);
 
 

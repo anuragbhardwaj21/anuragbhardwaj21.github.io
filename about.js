@@ -17,10 +17,12 @@ new Chart(ctx, {
       "CSS",
       "Adobe Premire Pro",
       "Adobe After Effects",
+      "Selenium",
+      "Node.js"
     ],
     datasets: [
       {
-        data: [2, 20, 10, 8, 10, 10, 15, 6],
+        data: [2, 20, 15, 8, 10, 10, 15, 6,8,6],
         borderWidth: 4,
         weight: 15,
         spacing: 15,
