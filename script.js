@@ -77,11 +77,11 @@ function c() {
     }, 500);
   }
 }
-var projectVideo1 = document.querySelector(".project-video-1");
+var projectVideo1 = document.getElementById("project-video-1");
 projectVideo1.addEventListener("mouseover", a);
 projectVideo1.addEventListener("mouseout", b);
 
-var projectDetails1 = document.querySelector(".project-details-1");
+var projectDetails1 = document.getElementById("project-details-1");
 projectVideo1.addEventListener("click", c);
 
 
@@ -111,11 +111,11 @@ function c2() {
     }, 500);
   }
 }
-var projectVideo2 = document.querySelector(".project-video-2");
+var projectVideo2 = document.getElementById("project-video-2");
 projectVideo2.addEventListener("mouseover", a2);
 projectVideo2.addEventListener("mouseout", b2);
 
-var projectDetails2 = document.querySelector(".project-details-2");
+var projectDetails2 = document.getElementById("project-details-2");
 projectVideo2.addEventListener("click", c2);
 
 

@@ -276,7 +276,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
-#project-card{
+.project-card{
   width: 70%;
   display: flex;
   left: 0;
@@ -285,7 +285,7 @@ body {
   padding: 2em;
   transition: .3s ease;
 }
-#project-video{
+.project-video{
   width: 70%;
   /* padding: 1em; */
   border-radius: 20px;
@@ -295,10 +295,10 @@ body {
   margin: auto;
   transition: .3s ease;
 }
-#project-video:hover{
+.project-video:hover{
   cursor: pointer;
 }
-.project-details-1{
+#project-details-1{
   width: 0%;
   overflow: hidden;
   transition: width 0.5s ease-in-out;
@@ -308,7 +308,7 @@ body {
   padding: 20px;
   opacity: 0;
 }
-.project-details-2{
+#project-details-2{
   width: 0%;
   overflow: hidden;
   transition: width 0.5s ease-in-out;
@@ -318,22 +318,22 @@ body {
   padding: 20px;
   opacity: 0;
 }
-.project-title-1,.project-title-2{
+#project-title-1,#project-title-2{
   color: #343434;
   font-size: 3em;
 }
-.project-title-2{
+#project-title-2{
   text-align: right;
 }
-.project-description-1,.project-description-2{
+#project-description-1,#project-description-2{
 font-size: small;
 margin: 0;
 color: #7c7a7a;
 }
-.project-description-2{
+#project-description-2{
   text-align: right;
 }
-.project-tech-stack-2{
+#project-tech-stack-2{
   text-align: right;
 
 }
