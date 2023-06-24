@@ -285,7 +285,7 @@ body {
   padding: 2em;
   transition: .3s ease;
 }
-.project-video{
+.project-image{
   width: 70%;
   /* padding: 1em; */
   border-radius: 20px;
@@ -295,7 +295,7 @@ body {
   margin: auto;
   transition: .3s ease;
 }
-.project-video:hover{
+.project-image:hover{
   cursor: pointer;
 }
 #project-details-1{
@@ -351,4 +351,7 @@ color: #7c7a7a;
 }
 .link-div-1 a:hover,.link-div-2 a:hover{
   color: #343434;
+}
+.home-img{
+  height: 100%;
 }

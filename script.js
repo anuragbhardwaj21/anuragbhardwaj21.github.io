@@ -53,13 +53,13 @@ var data = [
 
 
 
-function a() {
-  projectVideo1.play();
-}
-function b() {
-  projectVideo1.pause();
-  projectVideo1.currentTime = 0;
-}
+// function a() {
+//   projectVideo1.play();
+// }
+// function b() {
+//   projectVideo1.pause();
+//   projectVideo1.currentTime = 0;
+// }
 function c() {
   if (projectDetails1.style.width == "30%") {
     setTimeout(() => {
@@ -77,9 +77,9 @@ function c() {
     }, 500);
   }
 }
-var projectVideo1 = document.getElementById("project-video-1");
-projectVideo1.addEventListener("mouseover", a);
-projectVideo1.addEventListener("mouseout", b);
+var projectVideo1 = document.getElementById("project-image-1");
+// projectVideo1.addEventListener("mouseover", a);
+// projectVideo1.addEventListener("mouseout", b);
 
 var projectDetails1 = document.getElementById("project-details-1");
 projectVideo1.addEventListener("click", c);
@@ -87,13 +87,13 @@ projectVideo1.addEventListener("click", c);
 
 
 
-function a2() {
-  projectVideo2.play();
-}
-function b2() {
-  projectVideo2.pause();
-  projectVideo2.currentTime = 0;
-}
+// function a2() {
+//   projectVideo2.play();
+// }
+// function b2() {
+//   projectVideo2.pause();
+//   projectVideo2.currentTime = 0;
+// }
 function c2() {
   if (projectDetails2.style.width == "30%") {
     setTimeout(() => {
@@ -111,9 +111,9 @@ function c2() {
     }, 500);
   }
 }
-var projectVideo2 = document.getElementById("project-video-2");
-projectVideo2.addEventListener("mouseover", a2);
-projectVideo2.addEventListener("mouseout", b2);
+var projectVideo2 = document.getElementById("project-image-2");
+// projectVideo2.addEventListener("mouseover", a2);
+// projectVideo2.addEventListener("mouseout", b2);
 
 var projectDetails2 = document.getElementById("project-details-2");
 projectVideo2.addEventListener("click", c2);
