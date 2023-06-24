@@ -60,47 +60,7 @@ function b() {
   projectVideo1.pause();
   projectVideo1.currentTime = 0;
 }
-
-
-
-
 var projectVideo1 = document.getElementById("project-image-1");
 projectVideo1.playbackRate = 3;
-console.log(projectVideo1);
 projectVideo1.addEventListener("mouseover", a);
 projectVideo1.addEventListener("mouseout", b);
-
-
-
-// function a2() {
-//   projectVideo2.play();
-// }
-// function b2() {
-//   projectVideo2.pause();
-//   projectVideo2.currentTime = 0;
-// }
-function c2() {
-  if (projectDetails2.style.width == "30%") {
-    setTimeout(() => {
-      projectDetails2.style.opacity = "0";
-    }, 300);
-    setTimeout(() => {
-      projectDetails2.style.width = "0";
-    }, 500);
-    
-  } else {
-    projectDetails2.style.width = "30%";
-
-    setTimeout(() => {
-      projectDetails2.style.opacity = "1";
-    }, 500);
-  }
-}
-var projectVideo2 = document.getElementById("project-image-2");
-// projectVideo2.addEventListener("mouseover", a2);
-// projectVideo2.addEventListener("mouseout", b2);
-
-var projectDetails2 = document.getElementById("project-details-2");
-projectVideo2.addEventListener("click", c2);
-
-

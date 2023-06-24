@@ -50,13 +50,13 @@ body {
 #home {
   display: flex;
   height: 70vh;
-  /* padding-top: 4em; */
+  padding-top: 5em;
 }
 #home-left,
 #home-right {
   width: 50%;
   height: 100%;
-  border: 1px solid;
+  border-bottom: 1px solid;
   transition: 0.5s ease-in-out;
 }
 @keyframes slide-from-left {
