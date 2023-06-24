@@ -53,37 +53,22 @@ var data = [
 
 
 
-// function a() {
-//   projectVideo1.play();
-// }
-// function b() {
-//   projectVideo1.pause();
-//   projectVideo1.currentTime = 0;
-// }
-function c() {
-  if (projectDetails1.style.width == "30%") {
-    setTimeout(() => {
-      projectDetails1.style.opacity = "0";
-    }, 300);
-    setTimeout(() => {
-      projectDetails1.style.width = "0";
-    }, 500);
-    
-  } else {
-    projectDetails1.style.width = "30%";
-
-    setTimeout(() => {
-      projectDetails1.style.opacity = "1";
-    }, 500);
-  }
+function a() {
+  projectVideo1.play();
 }
+function b() {
+  projectVideo1.pause();
+  projectVideo1.currentTime = 0;
+}
+
+
+
+
 var projectVideo1 = document.getElementById("project-image-1");
-// projectVideo1.addEventListener("mouseover", a);
-// projectVideo1.addEventListener("mouseout", b);
-
-var projectDetails1 = document.getElementById("project-details-1");
-projectVideo1.addEventListener("click", c);
-
+projectVideo1.playbackRate = 3;
+console.log(projectVideo1);
+projectVideo1.addEventListener("mouseover", a);
+projectVideo1.addEventListener("mouseout", b);
 
 
 

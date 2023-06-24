@@ -1,5 +1,6 @@
 const navbar = () => {
-  return `<a href="index.html"><img src="./nav-icon.png" alt=""></a>
+  return `
+  <a href="index.html"><img src="./nav-icon.png" alt=""></a>
   <a href="index.html" class="nav-link home">Home</a>
   <a href="#about" class="nav-link about">About</a>
   <a href="#skills" class="nav-link skills">Skills</a>
