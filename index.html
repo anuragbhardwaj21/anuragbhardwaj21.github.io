@@ -32,49 +32,77 @@
       <div id="home-right">right</div>
     </div>
     <div id="about" class="about section">
-      <p id="user-detail-name">Hey!<br />It's Anurag</p>
-      <p id="user-detail-intro">
-        As a software engineer with skills in automation testing and frontend
-        development, I specialize in building software systems that are both
-        functional and user-friendly. My expertise in automation testing allows
-        me to design, develop, and implement automated testing processes that
-        ensure software products are thoroughly tested and free from bugs or
-        errors. In addition, my proficiency in frontend development enables me
-        to create visually appealing and intuitive user interfaces that provide
-        an exceptional user experience. I am skilled in using a range of
-        programming languages, frameworks, and tools including Java, JavaScript,
-        HTML, CSS, Selenium, and TestNG, Maven, among others. With a keen eye
-        for detail, I am passionate about creating software solutions that meet
-        the needs of end-users while ensuring that they meet the highest
-        standards of quality and performance. I have been working
-        collaboratively with cross-functional teams, and providing exceptional
-        customer service. Overall, my combination of automation testing and
-        frontend development skills makes me an ideal candidate for any software
-        development project that requires a robust, reliable, and user-friendly
-        software system.
-      </p>
-      <a href="#" id="resume-link-2" target="_blank" download="Anurag_CV.pdf">Resume <ion-icon name="download-outline"></ion-icon></a>
-      <a href="about.html">More About Me ?</a>
+      <div id="m-a-b-firstsection">
+        <div id="m-a-b-upperdiv">
+          <div id="m-a-b-u-left">
+            <h1>&lt;about /&gt;</h1>
+            <p id="user-detail-name">
+              I'm an aspiring FullStack Engineer currently working as a QA
+              Engineer in Wipro Ltd.
+            </p>
+            <p id="user-detail-intro">
+              Since 2020, I've enjoyed turning complex problems into simple,
+              beautiful and intuitive designs. When I'm not pushing pixels,
+              you'll find me cooking, gardening or working out in the gym.
+            </p>
+            <a
+              href="#"
+              id="resume-link-2"
+              target="_blank"
+              download="Anurag_CV.pdf"
+              >Resume <ion-icon name="download-outline"></ion-icon
+            ></a>
+          </div>
+          <div id="m-a-b-u-right">
+            <img src="anurag.JPG" alt="anurag" />
+          </div>
+        </div>
+        <div id="m-a-b-lowerdiv">
+          <img src="about-1.png" alt="" />
+          <img src="about-1.png" alt="" />
+          <img src="about-1.png" alt="" />
+          <img src="about-1.png" alt="" />
+          <img src="about-1.png" alt="" />
+        </div>
+      </div>
+      <a href="about.html" target="_blank" id="moreAboutMe">More About Me ?(Must Visit)</a>
     </div>
     <div id="skills">
-      <div class="skills-card">
-        <img src="" alt="" class="skills-card-img" />
-        <p class="skills-card-name">MERN</p>
-      </div>
-      <div class="skills-card">
-        <img src="" alt="" class="skills-card-img" />
-        <p class="skills-card-name">MERN</p>
-      </div>
-      <div class="skills-card">
-        <img src="" alt="" class="skills-card-img" />
-        <p class="skills-card-name">MERN</p>
-      </div>
-      <div class="skills-card">
-        <img src="" alt="" class="skills-card-img" />
-        <p class="skills-card-name">MERN</p>
+      <h1>Skills</h1>
+      <div id="m-a-b-secondsection" style="width: 100%">
+        <div id="m-a-b-s-1st">
+          <ul>
+            <h2 id="m-a-b-s-1st-heading">Tech Stacks</h2>
+            <li>Java</li>
+            <li>Selenium</li>
+            <li>Maven</li>
+            <li>JUnit</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Python</li>
+          </ul>
+        </div>
+        <div id="m-a-b-s-2nd"><canvas id="chart"></canvas></div>
+        <div id="m-a-b-s-3rd">
+          <ul>
+            <h2 id="m-a-b-s-1st-heading">Non-Tech Stacks</h2>
+            <li>Adobe Premire Pro</li>
+            <li>Adobe After Effects</li>
+            <li>Mac</li>
+            <li>Windows</li>
+            <li>Linux</li>
+            <li>Lazy</li>
+            <li>Linux</li>
+          </ul>
+        </div>
       </div>
     </div>
     <div id="projects">
+      <h1 style="text-align: center; margin-bottom: 3em; font-size: 3em">
+        Projects
+      </h1>
       <input type="radio" name="testimonial" id="t-1" />
       <input type="radio" name="testimonial" id="t-2" />
       <input type="radio" name="testimonial" id="t-3" checked />
@@ -82,7 +110,7 @@
       <input type="radio" name="testimonial" id="t-5" />
       <div class="testimonials">
         <label class="project-card" for="t-1">
-          <img style="display: none;" src="" alt="">
+          <img style="display: none" src="" alt="" />
           <video
             class="project-image"
             id="project-image-1"
@@ -202,9 +230,18 @@
         <label for="t-4"></label>
         <label for="t-5"></label>
       </div>
-      <p>Hi</p>
     </div>
     <div id="contact">
+      <div
+        style="
+          width: 200px;
+          height: 200px;
+          background: linear-gradient(white, white) padding-box,
+            black content-box;
+        "
+      >
+        hi
+      </div>
       <a href="https://github.com/anuragbhardwaj21" id="contact-github"
         >Github</a
       >
@@ -216,6 +253,7 @@
     </div>
     <div id="footer"></div>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script type="module" src="components.js"></script>
   <script type="module" src="script.js"></script>
 </html>
