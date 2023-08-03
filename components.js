@@ -6,7 +6,21 @@ const navbar = () => {
   <a href="#skills" class="nav-link skills">Skills</a>
   <a href="#projects" class="nav-link projects">Projects</a>
   <a href="#contact" class="nav-link contact">Contact</a>
-  <a href="#" id="resume-link-1" target="_blank" class="nav-link resume" download="Anurag_CV.pdf">Resume <ion-icon name="download-outline"></ion-icon></a>`;
+  <a
+  href="Anurag_resume.pdf"
+  id="resume-link-1"
+  class="nav-link resume"
+  target="_blank"
+  download="Anurag_resume.pdf"
+  rel="noopener noreferrer"
+  onclick="window.open('', '_blank', 'location=yes');"
+>Resume
+  <ion-icon
+    name="download-outline"
+    role="img"
+    class="md hydrated"
+  ></ion-icon>
+</a>`;
 };
 const footer = () => {
   return `<a href="">Home</a>
