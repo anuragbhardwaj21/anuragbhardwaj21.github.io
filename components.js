@@ -6,21 +6,19 @@ const navbar = () => {
   <a href="#skills" class="nav-link skills">Skills</a>
   <a href="#projects" class="nav-link projects">Projects</a>
   <a href="#contact" class="nav-link contact">Contact</a>
-  <a
-  href="Anurag_resume.pdf"
-  id="resume-link-1"
+  <button
+  id="resume-button-1"
   class="nav-link resume"
-  target="_blank"
-  download="Anurag_resume.pdf"
-  rel="noopener noreferrer"
-  onclick="window.open('', '_blank', 'location=yes');"
->Resume
+>
+  Resume
   <ion-icon
     name="download-outline"
     role="img"
     class="md hydrated"
   ></ion-icon>
-</a>`;
+</button>
+
+`;
 };
 const footer = () => {
   return `<a href="">Home</a>
