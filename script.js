@@ -145,25 +145,26 @@ document.getElementById("resume-button-1").addEventListener("click", function() 
   document.body.removeChild(link);
 });
 
-document.querySelector(".resss").addEventListener("click", function() {
-  // File URL
-  var fileURL = "Anurag_resume.pdf";
+// document.querySelector(".resss").addEventListener("click", function() {
+//   // File URL
+//   var fileURL = "Anurag_resume.pdf";
 
-  // Open the file in a new tab
-  window.open('', '_blank');
+//   // Open the file in a new tab
+//   window.open('', '_blank');
 
-  // Create a temporary anchor element to trigger the download
-  var link = document.createElement("a");
-  link.href = fileURL;
-  link.download = "Anurag_resume.pdf"; // Set the desired filename
+//   // Create a temporary anchor element to trigger the download
+//   var link = document.createElement("a");
+//   link.href = fileURL;
+//   link.download = "Anurag_resume.pdf"; // Set the desired filename
 
-  // Append the anchor element to the document and simulate a click
-  document.body.appendChild(link);
-  link.click();
+//   // Append the anchor element to the document and simulate a click
+//   document.body.appendChild(link);
+//   link.click();
 
-  // Clean up the anchor element after the click event has been processed
-  document.body.removeChild(link);
-});
+//   // Clean up the anchor element after the click event has been processed
+//   document.body.removeChild(link);
+// });
+
 document.getElementById("resume-button-2").addEventListener("click", function() {
   // File URL
   var fileURL = "Anurag_resume.pdf";
