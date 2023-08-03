@@ -51,8 +51,6 @@ var data = [
 ];
 // ---------------------------------->
 
-
-
 function a() {
   projectVideo1.play();
 }
@@ -80,11 +78,11 @@ new Chart(ctx, {
       "Adobe Premire Pro",
       "Adobe After Effects",
       "Selenium",
-      "Node.js"
+      "Node.js",
     ],
     datasets: [
       {
-        data: [2, 20, 15, 8, 10, 10, 15, 6,8,6],
+        data: [2, 20, 15, 8, 10, 10, 15, 6, 8, 6],
         borderWidth: 4,
         weight: 15,
         spacing: 15,
@@ -103,7 +101,6 @@ new Chart(ctx, {
   },
 });
 
-
 // --------------_>
 // const resume = document.getElementById("resume-button-1")
 // const resum2 = document.getElementById("resume-button-2")
@@ -114,36 +111,38 @@ new Chart(ctx, {
 // function downloadResume() {
 //   // Create an anchor element
 //   const link = document.createElement('a');
-  
+
 //   // Set the download attribute to the file name
 //   link.setAttribute('download', 'Anurag_resume.pdf');
-  
+
 //   // Set the href attribute to the file path
 //   link.setAttribute('href', 'Anurag_resume.pdf');
-  
+
 //   // Simulate a click on the anchor element to trigger the download
 //   link.click();
 // }
 
-document.getElementById("resume-button-1").addEventListener("click", function() {
-  // File URL
-  var fileURL = "Anurag_resume.pdf";
+document
+  .getElementById("resume-button-1")
+  .addEventListener("click", function () {
+    // File URL
+    var fileURL = "Anurag_resume.pdf";
 
-  // Open the file in a new tab
-  window.open('', '_blank');
+    // Open the file in a new tab
+    window.open("", "_blank");
 
-  // Create a temporary anchor element to trigger the download
-  var link = document.createElement("a");
-  link.href = fileURL;
-  link.download = "Anurag_resume.pdf"; // Set the desired filename
+    // Create a temporary anchor element to trigger the download
+    var link = document.createElement("a");
+    link.href = fileURL;
+    link.download = "Anurag_resume.pdf"; // Set the desired filename
 
-  // Append the anchor element to the document and simulate a click
-  document.body.appendChild(link);
-  link.click();
+    // Append the anchor element to the document and simulate a click
+    document.body.appendChild(link);
+    link.click();
 
-  // Clean up the anchor element after the click event has been processed
-  document.body.removeChild(link);
-});
+    // Clean up the anchor element after the click event has been processed
+    document.body.removeChild(link);
+  });
 
 // document.querySelector(".resss").addEventListener("click", function() {
 //   // File URL
@@ -165,22 +164,24 @@ document.getElementById("resume-button-1").addEventListener("click", function() 
 //   document.body.removeChild(link);
 // });
 
-document.getElementById("resume-button-2").addEventListener("click", function() {
-  // File URL
-  var fileURL = "Anurag_resume.pdf";
+document
+  .getElementById("resume-button-2")
+  .addEventListener("click", function () {
+    // File URL
+    var fileURL = "Anurag_resume.pdf";
 
-  // Open the file in a new tab
-  window.open('', '_blank');
+    // Open the file in a new tab
+    window.open("", "_blank");
 
-  // Create a temporary anchor element to trigger the download
-  var link = document.createElement("a");
-  link.href = fileURL;
-  link.download = "Anurag_resume.pdf"; // Set the desired filename
+    // Create a temporary anchor element to trigger the download
+    var link = document.createElement("a");
+    link.href = fileURL;
+    link.download = "Anurag_resume.pdf"; // Set the desired filename
 
-  // Append the anchor element to the document and simulate a click
-  document.body.appendChild(link);
-  link.click();
+    // Append the anchor element to the document and simulate a click
+    document.body.appendChild(link);
+    link.click();
 
-  // Clean up the anchor element after the click event has been processed
-  document.body.removeChild(link);
-});
+    // Clean up the anchor element after the click event has been processed
+    document.body.removeChild(link);
+  });

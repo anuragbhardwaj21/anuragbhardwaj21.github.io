@@ -1,10 +1,10 @@
 ::selection {
-  background-color: var(--black-color);;
+  background-color: var(--black-color);
   color: #c3c3c3;
 }
-:root{
-  --black-color:#343434;
-  --white-color:#c3c3c3
+:root {
+  --black-color: #343434;
+  --white-color: #c3c3c3;
 }
 html {
   scroll-behavior: smooth;
@@ -16,16 +16,15 @@ body {
   background-color: white;
 }
 #nav-menu {
-  position:fixed;
+  position: fixed;
   top: 0;
   width: 100%;
-  background-color:#343434;
+  background-color: #343434;
   padding: 0.9em 0;
-  display:flex;
+  display: flex;
   justify-content: space-evenly;
   align-items: center;
   z-index: 9999;
-  
 }
 #nav-menu a {
   text-decoration: none;
@@ -46,7 +45,7 @@ body {
   display: flex;
   align-items: center;
 }
-#about{
+#about {
   height: 100vh;
   /* border: 0.5px solid red; */
   display: flex;
@@ -132,7 +131,7 @@ body {
 }
 #m-a-b-u-left h1 {
   font-size: 5em;
-  color: var(--black-color);;
+  color: var(--black-color);
   margin: 0;
 }
 #m-a-b-u-left p:nth-child(2) {
@@ -179,7 +178,7 @@ body {
 }
 #m-a-b-s-1st-heading {
   font-size: 2.5em;
-  color: var(--black-color);;
+  color: var(--black-color);
   margin-bottom: 5px;
   text-align: center;
 }
@@ -254,7 +253,7 @@ body {
   padding: 2em;
 }
 #m-a-b-f-right h2 {
-  color: var(--black-color);;
+  color: var(--black-color);
   font-size: 3.5em;
   font-weight: 500;
 }
@@ -263,7 +262,7 @@ body {
   transition: 0.3s;
 }
 #m-a-b-f-right a:hover {
-  color: var(--black-color);;
+  color: var(--black-color);
 }
 #footer {
   display: flex;
@@ -276,10 +275,10 @@ body {
   color: #7c7a7a;
   text-decoration: none;
 }
-.home-img{
+.home-img {
   height: 100%;
 }
-#projects{
+#projects {
   height: 100vh;
   /* border: 1px solid; */
   padding-top: 5em;
@@ -287,7 +286,7 @@ body {
 #projects input {
   display: none;
 }
-.project-image{
+.project-image {
   width: 100%;
   border-radius: 5px;
 }
@@ -397,23 +396,24 @@ body {
 #t-5:checked ~ .testimonials label[for="t-5"] {
   z-index: 4;
 }
-#about,#skills{
+#about,
+#skills {
   display: flex;
   flex-direction: column;
 }
-#skills{
+#skills {
   padding-top: 4em;
 }
-#moreAboutMe{
+#moreAboutMe {
   text-decoration: none;
-  border: 1px solid var(--black-color);;
+  border: 1px solid var(--black-color);
   padding: 1em;
-  
-  color: var(--white-color);;
-  background-color: var(--black-color);;
-  transition: .3s ease-in-out;
+
+  color: var(--white-color);
+  background-color: var(--black-color);
+  transition: 0.3s ease-in-out;
 }
-#moreAboutMe:hover{
+#moreAboutMe:hover {
   background-color: white;
-  color: var(--black-color);;
+  color: var(--black-color);
 }
