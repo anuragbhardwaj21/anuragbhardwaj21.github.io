@@ -611,4 +611,5 @@ body.blue-background {
   white-space: nowrap;
   font-weight: 900;
   color: var(--bgcolor);
+  text-decoration: none;
 }
