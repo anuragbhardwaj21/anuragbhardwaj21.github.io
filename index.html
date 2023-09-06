@@ -2,325 +2,376 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="./anurag.ico" type="image/x-icon" />
-    <title>Anurag || Portfolio</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.production.min.js"
     ></script>
     <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
     ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Anurag()</title>
   </head>
   <body>
-    <div id="nav-menu"></div>
-    <div id="home">
-      <div id="home-left">
-        <img src="anurag.JPG" class="home-img" alt="" />
-      </div>
-      <div id="home-right"><p>Java Python React Github Node</p></div>
+    <div id="preloader">
+      <p>I'm <span id="myParagraph">?</span></p>
     </div>
-    <div id="about" class="about section">
-      <button
-      id="resume-button-2"
-      class="resss"
-    >
-      Resume
-      <ion-icon
-        name="download-outline"
-        role="img"
-        class="md hydrated"
-      ></ion-icon>
-    </button>
-      <div id="m-a-b-firstsection">
-        <div id="m-a-b-upperdiv">
-          <div id="m-a-b-u-left">
-            <h1>&lt;about /&gt;</h1>
-            <p id="user-detail-name">
-              I'm an aspiring FullStack Engineer currently working as a QA
-              Engineer in Wipro Ltd.
+    <div id="nav-menu">
+      <div id="left-nav">
+        <a href="index.html">Anurag<span id="currentdiv">.home()</span></a>
+      </div>
+      <div id="right-nav">
+        <a href="#home" class="nav-link home">.home()</a>
+        <a href="#about" class="nav-link about">.about()</a>
+        <a href="#skills" class="nav-link skills">.skills()</a>
+        <a href="#projects" class="nav-link projects">.projects()</a>
+        <a href="#statistics" class="nav-link projects">.statistics()</a>
+        <a href="#contact" class="nav-link contact">.contact()</a>
+        <a
+          href="Anurag_resume.pdf"
+          id="resume-link-1"
+          class="nav-link resume"
+          target="_blank"
+          download="Anurag_resume.pdf"
+          title="Download Resume"
+          rel="noopener noreferrer"
+          onclick="window.open('Anurag_resume.pdf', '_blank', 'location=yes');"
+        >
+          <ion-icon
+            name="download-outline"
+            role="img"
+            class="md hydrated"
+          ></ion-icon>
+        </a>
+
+        <a id="switchmode" title="Switch Dark/Light Mode"
+          ><ion-icon name="contrast-outline"></ion-icon
+        ></a>
+      </div>
+    </div>
+    <div id="main">
+      <div id="home">
+        <div>
+          <p id="line1">BE THE CHANGE</p>
+        </div>
+        <div>
+          <p id="line2">YOU WANT TO SEE</p>
+        </div>
+        <div>
+          <p id="line3">IN THE WORLD.</p>
+        </div>
+        <div>
+          <p id="line4">.a website to scroll slow()</p>
+        </div>
+      </div>
+      <div id="clouds">
+        <img src="./images/cloud1.png" alt="" />
+        <img src="./images/cloud2.png" alt="" />
+        <img src="./images/cloud3.png" alt="" />
+      </div>
+
+      <div id="about">
+        <p id="aboutp">.about()</p>
+        <div id="mainabout">
+          <div id="leftabout">
+            <img src="./images/anurag.JPG" alt="" />
+          </div>
+          <div id="rightabout">
+            <h1>Anurag Bhardwaj</h1>
+            <p id="location">
+              <ion-icon name="location"></ion-icon> Noida, Uttar Pradesh
             </p>
-            <p id="user-detail-intro">
-              Java Pyton React Node CSS JavaScript
-              <span>Java</span><span>Python</span><span>React</span
-              ><span>Node</span><span>MongoDB</span>
-              Since 2020, I've enjoyed turning complex problems into simple,
-              beautiful and intuitive designs. When I'm not pushing pixels,
-              you'll find me cooking, gardening or working out in the gym.
+            <p id="rightaboutp">
+              Proficient software engineer, well-versed in both fullstack
+              development and automation testing, with a strong commitment to
+              creating seamless software systems. Having worked collaboratively
+              within cross-functional teams, I understand the value of
+              harmonious teamwork and have consistently provided top-notch
+              customer service. My commitment to detail, combined with a passion
+              for creating software solutions that uphold the highest standards
+              of quality and performance, makes me an ideal asset for any
+              project in need of a robust, reliable, and user-centric software
+              system.
             </p>
-            <!-- <button id="resume-button-2">
+            <button id="resume-button-2">
               Resume
               <ion-icon
                 name="download-outline"
                 role="img"
                 class="md hydrated"
               ></ion-icon>
-            </button> -->
-          </div>
-          <div id="m-a-b-u-right">
-            <img src="anurag.JPG" alt="anurag" />
+            </button>
           </div>
         </div>
-        <div id="m-a-b-lowerdiv">
-          <img src="about-1.png" alt="" />
-          <img src="about-1.png" alt="" />
-          <img src="about-1.png" alt="" />
-          <img src="about-1.png" alt="" />
-          <img src="about-1.png" alt="" />
-        </div>
       </div>
-      <a href="about.html" target="_blank" id="moreAboutMe"
-        >More About Me ?(Must Visit)</a
-      >
-    </div>
-    <div id="skills">
-      <h1>Skills</h1>
-      <div class="skills-card">
-        <img class="skills-card-img" src="" alt="" />
-        <p class="skills-card-name">Java</p>
+      <div id="skills">
+        <p id="skillsp">.skills()</p>
+        <lottie-player
+          src="https://lottie.host/fcf425e6-1809-406c-8efd-cb6806b21b3c/njcJDu0KuN.json"
+          background="transparent"
+          speed=".4"
+          id="skillsanimation"
+          loop
+          autoplay
+        ></lottie-player>
+        <div id="rightskills"></div>
       </div>
-      <div class="skills-card">
-        <img class="skills-card-img" src="" alt="" />
-        <p class="skills-card-name">Java</p>
+
+      <div id="projects">
+        <p id="projecttitle">.projects()</p>
+        <lottie-player
+          src="https://lottie.host/a99b2e8f-79d1-4883-a0cc-cb5090358f4f/JnoHZfE89J.json"
+          background="transparent"
+          speed=".4"
+          id="projectanimation"
+          loop
+          autoplay
+        ></lottie-player>
       </div>
-      <div class="skills-card">
-        <img class="skills-card-img" src="" alt="" />
-        <p class="skills-card-name">Java</p>
-      </div>
-      <div class="skills-card">
-        <img class="skills-card-img" src="" alt="" />
-        <p class="skills-card-name">Java</p>
-      </div>
-      <div class="skills-card">
-        <img class="skills-card-img" src="" alt="" />
-        <p class="skills-card-name">Java</p>
-      </div>
-      <div class="skills-card">
-        <img class="skills-card-img" src="" alt="" />
-        <p class="skills-card-name">Java</p>
-      </div>
-      <div id="m-a-b-secondsection" style="width: 100%">
-        <div id="m-a-b-s-1st">
-          <ul>
-            <h2 id="m-a-b-s-1st-heading">Tech Stacks</h2>
-            <li>Java</li>
-            <li>Selenium</li>
-            <li>Maven</li>
-            <li>JUnit</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Python</li>
-          </ul>
-        </div>
-        <div id="m-a-b-s-2nd"></div>
-        <div id="m-a-b-s-3rd">
-          <ul>
-            <h2 id="m-a-b-s-1st-heading">Non-Tech Stacks</h2>
-            <li>Adobe Premire Pro</li>
-            <li>Adobe After Effects</li>
-            <li>Mac</li>
-            <li>Windows</li>
-            <li>Linux</li>
-            <li>Lazy</li>
-            <li>Linux</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div id="projects">
-      <h1 style="text-align: center; margin-bottom: 3em; font-size: 3em">
-        Projects
-      </h1>
-      <input type="radio" name="testimonial" id="t-1" />
-      <input type="radio" name="testimonial" id="t-2" />
-      <input type="radio" name="testimonial" id="t-3" checked />
-      <input type="radio" name="testimonial" id="t-4" />
-      <input type="radio" name="testimonial" id="t-5" />
-      <div class="testimonials">
-        <label class="project-card" for="t-1">
-          <img style="display: none" src="" alt="" />
-          <video
-            class="project-image"
-            id="project-image-1"
-            muted
-            src="skinstore.mov"
-          ></video>
-          <div class="project-details" id="project-details-1">
-            <h2 class="project-title" id="project-title-1">skinstore</h2>
-            <p class="project-description" id="project-description-1">
-              - One of the first online stores to offer dermatologist-created
-              and recommended products worldwide.
-            </p>
-            <p class="project-tech-stack" id="project-tech-stack-1">MERN</p>
-            <div id="link-div" class="link-div-1">
-              <a target="_blank" href="" class="project-github-link"
-                ><ion-icon name="logo-github"></ion-icon
-              ></a>
-              <a
-                target="_blank"
-                href="https://skinstoreclone7.netlify.app/"
-                class="project-deployed-link"
-                ><ion-icon name="open-outline"></ion-icon
-              ></a>
+      <div class="gallery">
+        <div class="left">
+          <div class="desktopContent">
+            <div class="projectCardDetail">
+              <h2 class="project-title">.Anurag()</h2>
+              <p class="project-description">
+                - Crafted an exquisite personal portfolio from scratch,
+                showcasing top skills and captivating animations.
+              </p>
+              <div class="project-tech-stack">
+                <img src="./images/html.png" alt="" />
+                <img src="./images/css.png" alt="" />
+                <img src="./images/js.png" alt="" />
+                <img src="./images/gsap.svg" alt="" />
+              </div>
+              <div id="link-div">
+                <a
+                  target="_blank"
+                  href="https://github.com/anuragbhardwaj21/anuragbhardwaj21.github.io"
+                  class="project-github-link"
+                  ><ion-icon name="logo-github"></ion-icon
+                ></a>
+                <a
+                  target="_blank"
+                  href="https://anuragbhardwaj21.github.io/"
+                  class="project-deployed-link"
+                  ><ion-icon name="open-outline"></ion-icon
+                ></a>
+              </div>
+            </div>
+            <div class="projectCardDetail">
+              <h2 class="project-title">Specialized Cyclestore</h2>
+              <p class="project-description">
+                - A modern online cycle store, where you can find all the types
+                of modern bikes.
+              </p>
+              <div class="project-tech-stack">
+                <img src="./images/html.png" alt="" />
+                <img src="./images/css.png" alt="" />
+                <img src="./images/js.png" alt="" />
+                <img src="./images/react.png" alt="" />
+                <img src="./images/chakraui.png" alt="" />
+              </div>
+              <div id="link-div">
+                <a
+                  target="_blank"
+                  href="https://github.com/ProActive44/specialized-bike-app"
+                  class="project-github-link"
+                  ><ion-icon name="logo-github"></ion-icon
+                ></a>
+                <a
+                  target="_blank"
+                  href="https://specializedstore.vercel.app/"
+                  class="project-deployed-link"
+                  ><ion-icon name="open-outline"></ion-icon
+                ></a>
+              </div>
+            </div>
+            <div class="projectCardDetail">
+              <h2 class="project-title">Healthcare 24/7</h2>
+              <p class="project-description">
+                - Convenient online pharmacy, delivering medicines right to your
+                door for hassle-free healthcare access.
+              </p>
+              <div class="project-tech-stack">
+                <img src="./images/html.png" alt="" />
+                <img src="./images/css.png" alt="" />
+                <img src="./images/js.png" alt="" />
+              </div>
+              <div id="link-div">
+                <a
+                  target="_blank"
+                  href="https://github.com/anuragbhardwaj21/Healthcare-24-7"
+                  class="project-github-link"
+                  ><ion-icon name="logo-github"></ion-icon
+                ></a>
+                <a
+                  target="_blank"
+                  href="https://healthcare-masai.netlify.app/"
+                  class="project-deployed-link"
+                  ><ion-icon name="open-outline"></ion-icon
+                ></a>
+              </div>
+            </div>
+            <div class="projectCardDetail">
+              <h2 class="project-title">skinstore</h2>
+              <p class="project-description">
+                - One of the first online stores to offer dermatologist-created
+                and recommended products worldwide.
+              </p>
+              <div class="project-tech-stack">
+                <img src="./images/html.png" alt="" />
+                <img src="./images/css.png" alt="" />
+                <img src="./images/js.png" alt="" />
+              </div>
+              <div id="link-div">
+                <a
+                  target="_blank"
+                  href="https://github.com/anuragbhardwaj21/Skinstore"
+                  class="project-github-link"
+                  ><ion-icon name="logo-github"></ion-icon
+                ></a>
+                <a
+                  target="_blank"
+                  href="https://skinstoreclone7.netlify.app/"
+                  class="project-deployed-link"
+                  ><ion-icon name="open-outline"></ion-icon
+                ></a>
+              </div>
             </div>
           </div>
-        </label>
-        <label class="project-card" for="t-2">
-          <img src="todoapp.png" class="project-image" alt="" />
-          <div class="project-details" id="project-details-1">
-            <h2 class="project-title" id="project-title-1">skinstore</h2>
-            <p class="project-description" id="project-description-1">
-              - One of the first online stores to offer dermatologist-created
-              and recommended products worldwide.
-            </p>
-            <p class="project-tech-stack" id="project-tech-stack-1">MERN</p>
-            <div id="link-div" class="link-div-1">
-              <a target="_blank" href="" class="project-github-link"
-                ><ion-icon name="logo-github"></ion-icon
-              ></a>
-              <a
-                target="_blank"
-                href="https://skinstoreclone7.netlify.app/"
-                class="project-deployed-link"
-                ><ion-icon name="open-outline"></ion-icon
-              ></a>
-            </div></div
-        ></label>
-        <label class="project-card" for="t-3">
-          <img src="todoapp.png" class="project-image" alt="" />
-          <div class="project-details" id="project-details-1">
-            <h2 class="project-title" id="project-title-1">skinstore</h2>
-            <p class="project-description" id="project-description-1">
-              - One of the first online stores to offer dermatologist-created
-              and recommended products worldwide.
-            </p>
-            <p class="project-tech-stack" id="project-tech-stack-1">MERN</p>
-            <div id="link-div" class="link-div-1">
-              <a target="_blank" href="" class="project-github-link"
-                ><ion-icon name="logo-github"></ion-icon
-              ></a>
-              <a
-                target="_blank"
-                href="https://skinstoreclone7.netlify.app/"
-                class="project-deployed-link"
-                ><ion-icon name="open-outline"></ion-icon
-              ></a>
-            </div></div
-        ></label>
-        <label class="project-card" for="t-4">
-          <img src="todoapp.png" class="project-image" alt="" />
-          <div class="project-details" id="project-details-1">
-            <h2 class="project-title" id="project-title-1">skinstore</h2>
-            <p class="project-description" id="project-description-1">
-              - One of the first online stores to offer dermatologist-created
-              and recommended products worldwide.
-            </p>
-            <p class="project-tech-stack" id="project-tech-stack-1">MERN</p>
-            <div id="link-div" class="link-div-1">
-              <a target="_blank" href="" class="project-github-link"
-                ><ion-icon name="logo-github"></ion-icon
-              ></a>
-              <a
-                target="_blank"
-                href="https://skinstoreclone7.netlify.app/"
-                class="project-deployed-link"
-                ><ion-icon name="open-outline"></ion-icon
-              ></a>
-            </div></div
-        ></label>
-        <label class="project-card" for="t-5">
-          <img src="todoapp.png" class="project-image" alt="" />
-          <div class="project-details" id="project-details-1">
-            <h2 class="project-title" id="project-title-1">skinstore</h2>
-            <p class="project-description" id="project-description-1">
-              - One of the first online stores to offer dermatologist-created
-              and recommended products worldwide.
-            </p>
-            <p class="project-tech-stack" id="project-tech-stack-1">MERN</p>
-            <div id="link-div" class="link-div-1">
-              <a target="_blank" href="" class="project-github-link"
-                ><ion-icon name="logo-github"></ion-icon
-              ></a>
-              <a
-                target="_blank"
-                href="https://skinstoreclone7.netlify.app/"
-                class="project-deployed-link"
-                ><ion-icon name="open-outline"></ion-icon
-              ></a>
-            </div></div
-        ></label>
-      </div>
-      <br />
-      <div class="dots">
-        <label for="t-1"></label>
-        <label for="t-2"></label>
-        <label for="t-3"></label>
-        <label for="t-4"></label>
-        <label for="t-5"></label>
-      </div>
-    </div>
-    <section id="statistics">
-      <p id="statsp">.statistics()</p>
-      <img
-        id="github-stats-card"
-        src="https://github-readme-stats.vercel.app/api?username=anuragbhardwaj21&show_icons=true&theme=violet-punch&title_color=6848E9&text_color=c4c4c4&bg_color=232323&icon_color=6848E9"
-        alt="Anurag's GitHub Stats"
-      />
-      <img
-        id="github-streak-stats"
-        src="https://github-readme-streak-stats.herokuapp.com?user=anuragbhardwaj21&theme=violet-punch&title_color=6848E9&text_color=c4c4c4&bg_color=232323&icon_color=6848E9&border_radius=5.4&date_format=j%20M%5B%20Y%5D&card_width=1000"
-        alt="GitHub Streak Stats"
-      />
-      <img
-        id="github-top-langs"
-        src="https://github-readme-stats.vercel.app/api/top-langs?username=anuragbhardwaj21&show_icons=true&locale=en&layout=compact"
-        alt="anuragbhardwaj21"
-      />
-      <a href="https://github.com/anuragbhardwaj21" target="_blank"> </a>
-      <div class="github-calender react-activity-calendar">
-        <div class="calendar">
-          <!-- Loading stuff -->
-          Loading the data just for you.
+        </div>
+        <div class="right">
+          <div class="desktopPhotos">
+            <div class="project-image">
+              <img src="./images/portfolio.png" alt="" />
+            </div>
+            <div class="project-image">
+              <img src="./images/cyclestore.png" alt="" />
+            </div>
+            <div class="project-image">
+              <img src="./images/healthcare.png" alt="" />
+            </div>
+            <div class="project-image">
+              <img src="./images/skinstore.png" alt="" />
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-    <div id="contact">
-      <div
-        style="
-          width: 200px;
-          height: 200px;
-          background: linear-gradient(white, white) padding-box,
-            black content-box;
-        "
-      >
-        hi
+      <div id="statistics">
+        <p id="statsp">.statistics()</p>
+        <div id="stats">
+          <a
+            href="https://github.com/anuragbhardwaj21"
+            target="_blank"
+            id="statsa1"
+          >
+            <img
+              id="github-streak-stats"
+              src="https://github-readme-streak-stats.herokuapp.com?user=anuragbhardwaj21&theme=violet-punch&title_color=6848E9&text_color=c4c4c4&bg_color=232323&icon_color=6848E9&border_radius=5.4&date_format=j%20M%5B%20Y%5D&card_width=1000"
+              alt="GitHub Streak Stats"
+            />
+          </a>
+          <a
+            href="https://github.com/anuragbhardwaj21"
+            target="_blank"
+            id="statsa2"
+          >
+            <img
+              id="github-streak-stats"
+              src="https://github-readme-streak-stats.herokuapp.com?user=anuragbhardwaj21&theme=violet-punch&title_color=6848E9&text_color=c4c4c4&bg_color=232323&icon_color=6848E9&border_radius=5.4&date_format=j%20M%5B%20Y%5D&card_width=1000"
+              alt="GitHub Streak Stats"
+          /></a>
+          <a
+            href="https://github.com/anuragbhardwaj21"
+            target="_blank"
+            id="statsa3"
+          >
+            <img
+              id="github-stats-card"
+              src="https://github-readme-stats.vercel.app/api?username=anuragbhardwaj21&show_icons=true&theme=violet-punch&title_color=6848E9&text_color=c4c4c4&bg_color=232323&icon_color=6848E9"
+              alt="Anurag's GitHub Stats"
+            />
+          </a>
+          <a
+            href="https://github.com/anuragbhardwaj21"
+            target="_blank"
+            id="statsa4"
+          >
+            <img
+              id="github-top-langs"
+              src="https://github-readme-stats.vercel.app/api/top-langs?username=anuragbhardwaj21&show_icons=true&locale=en&layout=compact"
+              alt="anuragbhardwaj21"
+          /></a>
+        </div>
       </div>
-      <div id="contact-github">
-        <a href="https://github.com/anuragbhardwaj21" id="contact-github"
-          >Github</a
-        >
+
+      <div id="contact">
+        <p id="contactp">.contact()</p>
+        <div id="qrwrapper">
+          <div id="whatsapp">
+            <img src="./images/qrwhatsapp.png" alt="" />
+            <p>
+              <ion-icon name="logo-whatsapp"></ion-icon> <span>Whatsapp</span>
+            </p>
+          </div>
+          <div id="contact-phone">
+            <img src="./images/qrcall.png" alt="" />
+            <p><ion-icon name="call-outline"></ion-icon> <span>Call</span></p>
+          </div>
+          <div id="contact-email">
+            <img src="./images/qremail.png" alt="" />
+            <p><ion-icon name="mail-outline"></ion-icon> <span>Email</span></p>
+          </div>
+        </div>
+        <div id="contactlinkedingithub">
+          <a
+            href="https://www.linkedin.com/in/anurag-bhardwaj-2361am/"
+            target="_blank"
+            id="contact-linkedin"
+            >LinkedIn</a
+          >
+          <a
+            href="https://github.com/anuragbhardwaj21"
+            target="_blank"
+            id="contact-github"
+            >Github</a
+          >
+        </div>
+        <p id="contactlastchild">No forms !! Just Scan</p>
       </div>
-      <div id="contact-linkedin">
-        <a href="https://github.com/anuragbhardwaj21" id="contact-linkedin"
-          >LinkedIn</a
-        >
-      </div>
-      <p id="contact-phone">Phone</p>
-      <p id="contact-email">Email</p>
+      <div id="footersection"><a href="#home" id="quote">Back On Top ?</a></div>
     </div>
-    <div id="footer"></div>
   </body>
-  <script type="module" src="components.js"></script>
-  <script type="module" src="script.js"></script>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+    integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+  <script type="text/babel" src="bundle.js"></script>
 </html>
