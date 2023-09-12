@@ -493,6 +493,9 @@ body.blue-background {
   text-align: center;
   color: var(--purple);
 }
+#contactp{
+  margin-top: 3em;
+}
 #qrwrapper,
 #contactlinkedingithub {
   margin: auto;
