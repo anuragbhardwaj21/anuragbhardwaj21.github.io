@@ -125,7 +125,7 @@ body.blue-background {
   transform: translateX(-110%);
 }
 #clouds img:nth-child(2) {
-  transform: translate(-90%, 40%);
+  transform: translate(-100%, 40%);
 }
 #clouds img:nth-child(3) {
   transform: translate(110%, 30%);
@@ -493,7 +493,7 @@ body.blue-background {
   text-align: center;
   color: var(--purple);
 }
-#contactp{
+#contactp {
   margin-top: 3em;
 }
 #qrwrapper,
@@ -577,28 +577,30 @@ body.blue-background {
 #home {
   display: flex;
   flex-direction: column;
-  padding:3em;
+  padding: 3em;
   padding-top: 5em;
 }
-#home div{
-  border-bottom: .5px solid rgba(255, 255, 255, 0.314);
+#home div {
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.314);
 }
-#home div:nth-child(4){
+#home div:nth-child(4) {
   border: none;
 }
-#line1,#line2,#line3{
+#line1,
+#line2,
+#line3 {
   font-size: 5em;
   color: var(--white);
   margin: 0;
   margin-top: 2em;
 }
-#line2{
+#line2 {
   text-align: center;
 }
-#line3{
+#line3 {
   text-align: end;
 }
-#line4{
+#line4 {
   font-size: small;
   color: rgba(255, 255, 255, 0.579);
   text-align: end;
@@ -615,4 +617,79 @@ body.blue-background {
   font-weight: 900;
   color: var(--bgcolor);
   text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+  #rightskills {
+    transform: translateX(0%);
+    opacity: 1;
+    padding: 0;
+    width: 100%;
+  }
+  #skillscard {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 30%;
+    height: 20%;
+    text-align: center;
+    padding: 0.8em;
+  }
+  #aboutp {
+    opacity: 1;
+    text-align: center;
+    color: var(--purple);
+  }
+  #skillsp {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 800px) {
+  #nav-menu {
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  #right-nav {
+    width: 40%;
+    opacity: 0;
+  }
+  #left-nav {
+    width: 40%;
+  }
+  #left-nav a {
+    font-size: .8em;
+  }
+  .gallery {
+    display: flex;
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #line1,
+  #line2,
+  #line3 {
+    font-size: 2em;
+  }
+  #aboutp {
+    font-size: 2em;
+  }
+  #mainabout {
+    width: 100%;
+    height: 55%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    opacity: 1;
+  }
+  #leftabout {
+    width: 20%;
+  }
+  #rightabout p {
+    font-size: 0.5em;
+  }
+  #projecttitle {
+    font-size: 0.5em;
+  }
 }

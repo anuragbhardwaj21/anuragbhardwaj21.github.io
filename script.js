@@ -1,4 +1,5 @@
 // --------------------------------------------->
+const mediaQuery = window.matchMedia("(min-width: 1050px)");
 window.onload = function () {
   var text = [
     "FullStack Engineer",
@@ -40,18 +41,18 @@ window.onload = function () {
         duration: 1.5,
         y: -20,
         opacity: 0,
-      }).from("#line3", {
+      })
+      .from("#line3", {
         transform: "translateX(100%)",
         duration: 5,
         ease: "Power4.easeOut",
       })
       .from("#line4", {
         duration: 8,
-        opacity:0,
+        opacity: 0,
         y: -10,
         ease: "Power4.easeOut",
-      })
-    // document.getElementById("preloader").style.display = "none";
+      });
     document.body.style.overflow = "auto";
     var navMenu = document.getElementById("nav-menu");
     navMenu.style.zIndex = "9999";
@@ -59,84 +60,86 @@ window.onload = function () {
 };
 // --------------------------->
 document.addEventListener("DOMContentLoaded", function () {
-  gsap.to(".foreground-image", {
-    y: "-50%%",
-    scale: 2,
-    scrollTrigger: {
-      id: "image",
-      trigger: "#innerhome",
-      scrub: 5,
-      start: "top 5%",
-      end: "bottom 30%",
-    },
-  });
-  gsap.to(".foreground-image2", {
-    y: "-30%%",
-    x: "-20%",
-    scrollTrigger: {
-      id: "image",
-      trigger: "#innerhome",
-      scrub: 5,
-      start: "top 5%",
-      end: "bottom 30%",
-    },
-  });
-  gsap.to(".backgroundclouds", {
-    scale: 1.2,
-    y: "0%",
-    x: "0%",
-    scrollTrigger: {
-      id: "image",
-      trigger: "#innerhome",
-      scrub: 5,
-      start: "top 5%",
-      end: "bottom 30%",
-    },
-  });
-  gsap.to(".backgroundclouds2", {
-    scale: 1.2,
-    y: "0%",
-    x: "0%",
-    opacity: 1,
-    scrollTrigger: {
-      id: "image",
-      trigger: "#innerhome",
-      scrub: 5,
-      start: "top 5%",
-      end: "bottom 30%",
-    },
-  });
-  gsap.to(".background-image", {
-    scale: 1.2,
-    x: "10%",
-    scrollTrigger: {
-      id: "image",
-      trigger: "#innerhome",
-      scrub: 5,
-      start: "top 5%",
-      end: "bottom 30%",
-    },
-  });
-  gsap.to("#innerhome p", {
-    scale: 1.5,
-    opacity: 0,
-    scrollTrigger: {
-      id: "image",
-      trigger: "#innerhome",
-      scrub: 5,
-      start: "top 5%",
-      end: "bottom 30%",
-    },
-  });
-  gsap.to("#innerhome", {
-    opacity: 0,
-    scrollTrigger: {
-      trigger: "#innerhome",
-      scrub: true,
-      start: "top -20%",
-      end: "bottom 55%",
-    },
-  });
+  if (mediaQuery.matches) {
+    gsap.to(".foreground-image", {
+      y: "-50%%",
+      scale: 2,
+      scrollTrigger: {
+        id: "image",
+        trigger: "#innerhome",
+        scrub: 5,
+        start: "top 5%",
+        end: "bottom 30%",
+      },
+    });
+    gsap.to(".foreground-image2", {
+      y: "-30%%",
+      x: "-20%",
+      scrollTrigger: {
+        id: "image",
+        trigger: "#innerhome",
+        scrub: 5,
+        start: "top 5%",
+        end: "bottom 30%",
+      },
+    });
+    gsap.to(".backgroundclouds", {
+      scale: 1.2,
+      y: "0%",
+      x: "0%",
+      scrollTrigger: {
+        id: "image",
+        trigger: "#innerhome",
+        scrub: 5,
+        start: "top 5%",
+        end: "bottom 30%",
+      },
+    });
+    gsap.to(".backgroundclouds2", {
+      scale: 1.2,
+      y: "0%",
+      x: "0%",
+      opacity: 1,
+      scrollTrigger: {
+        id: "image",
+        trigger: "#innerhome",
+        scrub: 5,
+        start: "top 5%",
+        end: "bottom 30%",
+      },
+    });
+    gsap.to(".background-image", {
+      scale: 1.2,
+      x: "10%",
+      scrollTrigger: {
+        id: "image",
+        trigger: "#innerhome",
+        scrub: 5,
+        start: "top 5%",
+        end: "bottom 30%",
+      },
+    });
+    gsap.to("#innerhome p", {
+      scale: 1.5,
+      opacity: 0,
+      scrollTrigger: {
+        id: "image",
+        trigger: "#innerhome",
+        scrub: 5,
+        start: "top 5%",
+        end: "bottom 30%",
+      },
+    });
+    gsap.to("#innerhome", {
+      opacity: 0,
+      scrollTrigger: {
+        trigger: "#innerhome",
+        scrub: true,
+        start: "top -20%",
+        end: "bottom 55%",
+      },
+    });
+  }
 });
 
 // --------------------------->
@@ -289,80 +292,80 @@ const options = {
 
 const observer = new IntersectionObserver(handleIntersect, options);
 observer.observe(cloudsDiv);
+if (mediaQuery.matches) {
+  gsap.to("#clouds img:first-child", {
+    x: "96%",
+    scrollTrigger: {
+      trigger: "#clouds",
+      scrub: 4,
+      start: "top 60%",
+      end: "bottom 20%",
+    },
+    opacity: 0.3,
+  });
+  gsap.to("#clouds img:nth-child(2)", {
+    x: "98%",
+    y: "-10%",
+    scrollTrigger: {
+      trigger: "#clouds",
+      scrub: 5,
+      start: "top 40%",
+      end: "bottom 20%",
+    },
+    opacity: 0.3,
+  });
+  gsap.to("#clouds img:nth-child(3)", {
+    x: "-100%",
+    y: "0%",
+    scrollTrigger: {
+      trigger: "#clouds",
+      scrub: 4,
+      start: "top 80%",
+      end: "bottom 20%",
+    },
+    opacity: 0.2,
+  });
 
-gsap.to("#clouds img:first-child", {
-  x: "96%",
-  scrollTrigger: {
-    trigger: "#clouds",
-    scrub: 4,
-    start: "top 60%",
-    end: "bottom 20%",
-  },
-  opacity: 0.3,
-});
-gsap.to("#clouds img:nth-child(2)", {
-  x: "98%",
-  y: "-10%",
-  scrollTrigger: {
-    trigger: "#clouds",
-    scrub: 5,
-    start: "top 40%",
-    end: "bottom 20%",
-  },
-  opacity: 0.3,
-});
-gsap.to("#clouds img:nth-child(3)", {
-  x: "-100%",
-  y: "0%",
-  scrollTrigger: {
-    trigger: "#clouds",
-    scrub: 4,
-    start: "top 80%",
-    end: "bottom 20%",
-  },
-  opacity: 0.2,
-});
+  gsap.to("#about p", {
+    scrollTrigger: {
+      trigger: "#about",
+      scrub: 2,
+      start: "top 65%",
+      end: "bottom 100%",
+    },
+    opacity: 1,
+  });
+  gsap.to("#aboutp", {
+    scrollTrigger: {
+      trigger: "#about",
+      scrub: 2,
+      start: "top 50%",
+      end: "bottom 10%",
+    },
+    color: "rgb(104, 72, 233)",
+  });
 
-gsap.to("#about p", {
-  scrollTrigger: {
-    trigger: "#about",
-    scrub: 2,
-    start: "top 65%",
-    end: "bottom 100%",
-  },
-  opacity: 1,
-});
-gsap.to("#aboutp", {
-  scrollTrigger: {
-    trigger: "#about",
-    scrub: 2,
-    start: "top 50%",
-    end: "bottom 10%",
-  },
-  color: "rgb(104, 72, 233)",
-});
-
-gsap.to("#skillsp", {
-  scrollTrigger: {
-    trigger: "#skills",
-    scrub: 5,
-    start: "top 80%",
-    end: "bottom 100%",
-  },
-  opacity: 1,
-  scale: 2,
-});
-gsap.to("#rightskills", {
-  x: "0%",
-  scrollTrigger: {
-    trigger: "#rightskills",
-    scrub: 5,
-    start: "top 80%",
-    end: "bottom 100%",
-  },
-  opacity: 1,
-});
-
+  gsap.to("#skillsp", {
+    scrollTrigger: {
+      trigger: "#skills",
+      scrub: 5,
+      start: "top 80%",
+      end: "bottom 100%",
+    },
+    opacity: 1,
+    scale: 2,
+  });
+  gsap.to("#rightskills", {
+    x: "0%",
+    scrollTrigger: {
+      trigger: "#rightskills",
+      scrub: 5,
+      start: "top 80%",
+      end: "bottom 100%",
+    },
+    opacity: 1,
+  });
+}
 // ------------project animation
 gsap.to("#projectanimation", {
   x: "100%",
@@ -422,7 +425,7 @@ gsap.set(photos, { yPercent: 101 });
 const allPhotos = gsap.utils.toArray(".project-image");
 let mm = gsap.matchMedia();
 
-mm.add("(min-width: 600px)", () => {
+mm.add("(min-width: 500px)", () => {
   ScrollTrigger.create({
     trigger: ".gallery",
     start: "top top",
