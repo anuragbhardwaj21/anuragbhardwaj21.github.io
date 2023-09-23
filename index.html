@@ -62,6 +62,36 @@
           ><ion-icon name="contrast-outline"></ion-icon
         ></a>
       </div>
+      <button id="hamburger-menu-button">
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+      <div class="rightpanel close">
+        <a href="#home" class="nav-link home">.home()</a>
+        <a href="#about" class="nav-link about">.about()</a>
+        <a href="#skills" class="nav-link skills">.skills()</a>
+        <a href="#projects" class="nav-link projects">.projects()</a>
+        <a href="#statistics" class="nav-link projects">.statistics()</a>
+        <a href="#contact" class="nav-link contact">.contact()</a>
+        <a
+          href="Anurag_resume.pdf"
+          id="resume-link-1"
+          class="nav-link resume"
+          target="_blank"
+          download="Anurag_resume.pdf"
+          title="Download Resume"
+          rel="noopener noreferrer"
+          onclick="window.open('Anurag_resume.pdf', '_blank', 'location=yes');"
+        >
+          <ion-icon
+            name="download-outline"
+            role="img"
+            class="md hydrated"
+          ></ion-icon>
+        </a>
+        <a id="switchmode" title="Switch Dark/Light Mode"
+          ><ion-icon name="contrast-outline"></ion-icon
+        ></a>
+      </div>
     </div>
     <div id="main">
       <div id="home">
@@ -353,7 +383,11 @@
         </div>
         <p id="contactlastchild">No forms !! Just Scan</p>
       </div>
-      <div id="footersection"><a href="#home" id="quote">Back On Top  <ion-icon name="arrow-up"></ion-icon></a></div>
+      <div id="footersection">
+        <a href="#home" id="quote"
+          >Back On Top <ion-icon name="arrow-up"></ion-icon
+        ></a>
+      </div>
     </div>
   </body>
   <script

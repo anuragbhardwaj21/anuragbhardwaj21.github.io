@@ -606,4 +606,21 @@ gsap.to("#statsa4", {
   },
 });
 
-// --------------------------->quote
+// --------------------------->hamburger-menu-button
+const hamburgerMenuButton = document.getElementById("hamburger-menu-button");
+const rightPanel = document.querySelector(".rightpanel");
+let isOpen = false;
+
+hamburgerMenuButton.addEventListener("click", function () {
+  if (isOpen) {
+    hamburgerMenuButton.innerHTML = '<ion-icon name="menu-outline"></ion-icon>';
+    rightPanel.classList.remove("open");
+    rightPanel.classList.add("close");
+  } else {
+    hamburgerMenuButton.innerHTML = '<ion-icon name="close-outline"></ion-icon>';
+    rightPanel.classList.remove("close");
+    rightPanel.classList.add("open");
+  }
+  
+  isOpen = !isOpen;
+});

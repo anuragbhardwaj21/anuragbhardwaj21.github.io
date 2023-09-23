@@ -618,6 +618,54 @@ body.blue-background {
   color: var(--bgcolor);
   text-decoration: none;
 }
+#hamburger-menu-button {
+  display: none;
+  background-color: transparent;
+  color: var(--white);
+  font-size: 1.5em;
+  margin-right: 1em;
+  border: none;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+  z-index: 10;
+}
+#hamburger-menu-button:hover {
+  color: var(--purple);
+}
+
+.rightpanel {
+  max-width: 200px;
+  background-color: var(--bgcolor);
+  background-size: 117px 188px;
+  transition: all 0.5s ease-out;
+  position: fixed;
+  z-index: 5;
+  right: -100%;
+  top: 0;
+  height: 100vh;
+  border-left: 0.5px solid black;
+  width: 50%;
+  visibility: hidden;
+  opacity: 0;
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2em;
+  &.open {
+    visibility: visible;
+    width: 100%;
+    right: 0;
+    opacity: 1;
+  }
+}
+.rightpanel a {
+  text-decoration: none;
+  color: var(--white);
+  transition: 0.25s ease-in-out;
+}
+.rightpanel a:hover {
+  color: var(--purple);
+}
 
 @media screen and (max-width: 1024px) {
   #rightskills {
@@ -658,11 +706,14 @@ body.blue-background {
     width: 40%;
   }
   #left-nav a {
-    font-size: .8em;
+    font-size: 0.8em;
   }
   .gallery {
     display: flex;
     opacity: 1;
+  }
+  #hamburger-menu-button {
+    display: block;
   }
 }
 
