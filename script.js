@@ -191,7 +191,10 @@ const switchMode = document.getElementById("switchmode");
 switchMode.onclick = () => {
   document.body.classList.toggle("light-theme");
 };
-
+const switchMode1 = document.getElementById("switchmode1");
+switchMode1.onclick = () => {
+  document.body.classList.toggle("light-theme");
+};
 // ---------------------------->
 let skillsValues = [
   {

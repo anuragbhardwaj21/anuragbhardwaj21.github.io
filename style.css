@@ -700,7 +700,7 @@ body.blue-background {
   }
   #right-nav {
     width: 40%;
-    opacity: 0;
+    display: none;
   }
   #left-nav {
     width: 40%;
@@ -715,6 +715,15 @@ body.blue-background {
   #hamburger-menu-button {
     display: block;
   }
+  #rightskills {
+  width: 85%;
+  height: 25%;
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  /* transform: translateX(50%); */
+  padding: 2em;
+  opacity: 0;
+}
 }
 
 @media screen and (max-width: 480px) {
