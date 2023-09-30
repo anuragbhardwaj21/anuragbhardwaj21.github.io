@@ -561,11 +561,11 @@ document
   .getElementById("resume-button-2")
   .addEventListener("click", function () {
     // File URL
-    var fileURL = "Anurag_Bhardwaj_Resume.pdf";
+    var fileURL = "Anurag-Bhardwaj-Resume.pdf";
     window.open("", "_blank");
     var link = document.createElement("a");
     link.href = fileURL;
-    link.download = "Anurag_Bhardwaj_Resume.pdf";
+    link.download = "Anurag-Bhardwaj-Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
