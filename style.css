@@ -149,13 +149,13 @@ body.blue-background {
   padding: 2em;
 }
 #leftabout {
-  width: 35%;
+  width: 45%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 #leftabout img {
-  width: 75%;
+  width: 70%;
   border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
@@ -720,7 +720,6 @@ body.blue-background {
     height: 25%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* transform: translateX(50%); */
     padding: 2em;
     opacity: 0;
   }
@@ -747,12 +746,20 @@ body.blue-background {
     opacity: 1;
   }
   #leftabout {
-    width: 20%;
+    width: 60%;
   }
   #rightabout p {
     font-size: 0.5em;
   }
   #projecttitle {
     font-size: 0.5em;
+  }
+  #rightskills {
+    width: 85%;
+    height: 25%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2em;
+    opacity: 0;
   }
 }
