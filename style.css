@@ -103,7 +103,7 @@ body.blue-background {
 #statistics,
 #about {
   padding-top: 4em;
-  /* height: 100vh; */
+
 }
 
 /* ------- */
@@ -565,7 +565,7 @@ body.blue-background {
 }
 /* --------------------------------------- */
 #footersection {
-  height: 5vh;
+  /* height: 5vh; */
   background-color: var(--white);
 }
 #statistics {
@@ -667,6 +667,11 @@ body.blue-background {
   color: var(--purple);
 }
 
+#projectscardscontainer {
+  display: none;
+}
+
+
 @media screen and (max-width: 1024px) {
   #rightskills {
     transform: translateX(0%);
@@ -692,7 +697,42 @@ body.blue-background {
   #skillsp {
     opacity: 1;
   }
+  .gallery {
+    display: none;
+  }
+  #projectscardscontainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+  #project-card {
+    margin: auto;
+    margin-top: 1em;
+    width: 50%;
+    padding: 1em;
+    border-top: 0.5px solid var(--white);
+    transition: .25s ease-in-out;
+  }
+  #project-card:hover{
+    border-top: 0.5px solid var(--purple);
+  }
+  #project-image{
+    width: 100%;
+    border-radius: 1em;
+  }
+  .project-title{
+    font-size: 1.5em;
+  }
+  .project-description {
+    font-size: 1em;
+  }
+  #card-detail{
+    padding: 1em;
+  }
 }
+
 @media screen and (max-width: 800px) {
   #nav-menu {
     justify-content: space-evenly;
@@ -723,8 +763,14 @@ body.blue-background {
     padding: 2em;
     opacity: 0;
   }
-  #mainabout{
+  #mainabout {
     flex-direction: column;
+  }
+  .project-title{
+    font-size: 1.2em;
+  }
+  .project-description {
+    font-size: .8em;
   }
 }
 
@@ -761,5 +807,11 @@ body.blue-background {
     grid-template-columns: repeat(2, 1fr);
     padding: 2em;
     opacity: 0;
+  }
+  .project-title{
+    font-size: .8em;
+  }
+  .project-description {
+    font-size: .6em;
   }
 }
