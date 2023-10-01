@@ -103,7 +103,6 @@ body.blue-background {
 #statistics,
 #about {
   padding-top: 4em;
-
 }
 
 /* ------- */
@@ -468,11 +467,19 @@ body.blue-background {
 #statsa3,
 #statsa4 {
   opacity: 0;
-  width: 50%;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
-
+#github-streak-stats {
+  width: 100%;
+}
+#github-stats-card {
+  width: 50%;
+}
+#github-top-langs {
+  width: 35%;
+}
 /* ---------------------------------------------- */
 #contact {
   /* height: 85vh; */
@@ -671,7 +678,6 @@ body.blue-background {
   display: none;
 }
 
-
 @media screen and (max-width: 1024px) {
   #line1,
   #line2,
@@ -718,22 +724,22 @@ body.blue-background {
     width: 50%;
     padding: 1em;
     border-top: 0.5px solid var(--white);
-    transition: .25s ease-in-out;
+    transition: 0.25s ease-in-out;
   }
-  #project-card:hover{
+  #project-card:hover {
     border-top: 0.5px solid var(--purple);
   }
-  #project-image{
+  #project-image {
     width: 100%;
     border-radius: 1em;
   }
-  .project-title{
+  .project-title {
     font-size: 1.5em;
   }
   .project-description {
     font-size: 1em;
   }
-  #card-detail{
+  #card-detail {
     padding: 1em;
   }
 }
@@ -776,12 +782,32 @@ body.blue-background {
   #mainabout {
     flex-direction: column;
   }
-  .project-title{
+  .project-title {
     font-size: 1.2em;
   }
   .project-description {
-    font-size: .8em;
+    font-size: 0.8em;
   }
+  #skillsp {
+    font-size: 1em;
+  }
+  #contactp,
+  #statsp {
+    font-size: 2em;
+  }
+  #whatsapp,
+#contact-phone,
+#contact-email {
+  padding: .5em;
+}
+#whatsapp p,
+#contact-phone p,
+#contact-email p {
+  font-size: .5em;
+}
+#contactlastchild {
+  font-size: .6em;
+}
 }
 
 @media screen and (max-width: 480px) {
@@ -818,10 +844,10 @@ body.blue-background {
     padding: 2em;
     opacity: 0;
   }
-  .project-title{
-    font-size: .8em;
+  .project-title {
+    font-size: 0.8em;
   }
   .project-description {
-    font-size: .6em;
+    font-size: 0.6em;
   }
 }
