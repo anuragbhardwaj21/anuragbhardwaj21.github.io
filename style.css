@@ -673,6 +673,11 @@ body.blue-background {
 
 
 @media screen and (max-width: 1024px) {
+  #line1,
+  #line2,
+  #line3 {
+    font-size: 2.5em;
+  }
   #rightskills {
     transform: translateX(0%);
     opacity: 1;
@@ -734,6 +739,11 @@ body.blue-background {
 }
 
 @media screen and (max-width: 800px) {
+  #line1,
+  #line2,
+  #line3 {
+    font-size: 2.2em;
+  }
   #nav-menu {
     justify-content: space-evenly;
     width: 100%;
@@ -778,7 +788,7 @@ body.blue-background {
   #line1,
   #line2,
   #line3 {
-    font-size: 2em;
+    font-size: 1.5em;
   }
   #aboutp {
     font-size: 2em;
